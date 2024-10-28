@@ -39,6 +39,14 @@ while playing:
             if choice1 == game[i][j]:
                 game[i][j] = player1
     layout()
+    if (game[0].count("X") == 3) or (game[1].count("X") == 3) or (game[2].count("X") == 3) or (game[0][0]=="X" and game[1][0]=="X" and game[2][0]=="X") or (game[0][1]=="X" and game[1][1]=="X" and game[2][1]=="X") or (game[0][0]=="X" and game[1][1]=="X" and game[2][2]=="X") or (game[0][2]=="X" and game[1][1]=="X" and game[2][0]=="X"):
+        if player1 == "X":
+            print("Player 1 (" + player1 + ") Won!")
+        break
+    if (game[0].count("O") == 3) or (game[1].count("O") == 3) or (game[2].count("O") == 3) or (game[0][0]=="O" and game[1][0]=="O" and game[2][0]=="O") or (game[0][1]=="O" and game[1][1]=="O" and game[2][1]=="O") or (game[0][0]=="O" and game[1][1]=="O" and game[2][2]=="O") or (game[0][2]=="O" and game[1][1]=="O" and game[2][0]=="O"):
+        if player1 == "O":
+            print("Player 1 (" + player1 + ") Won!")
+        break
 
     choice2 = input("It's player 1's turn. Enter your slot: ")
     print("Player 1 (X) - Player 2 (O)")
@@ -47,3 +55,9 @@ while playing:
             if choice2 == game[k][h]:
                 game[k][h] = player2
     layout()
+    if (game[0].count("X") == 3) or (game[1].count("X") == 3) or (game[2].count("X") == 3) or (game[0][0]=="X" and game[1][0]=="X" and game[2][0]=="X") or (game[0][1]=="X" and game[1][1]=="X" and game[2][1]=="X") or (game[0][0]=="X" and game[1][1]=="X" and game[2][2]=="X") or (game[0][2]=="X" and game[1][1]=="X" and game[2][0]=="X"):
+        print("Player 2 (" + player2 + ") Won!")
+        break
+    if (game[0].count("O") == 3) or (game[1].count("O") == 3) or (game[2].count("O") == 3) or (game[0][0]=="O" and game[1][0]=="O" and game[2][0]=="O") or (game[0][1]=="O" and game[1][1]=="O" and game[2][1]=="O") or (game[0][0]=="O" and game[1][1]=="O" and game[2][2]=="O") or (game[0][2]=="O" and game[1][1]=="O" and game[2][0]=="O"):
+        print("Player 2 (" + player2 + ") Won!")
+        break
