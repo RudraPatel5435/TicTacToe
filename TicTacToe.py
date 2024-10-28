@@ -47,6 +47,14 @@ while playing:
         if player1 == "O":
             print("Player 1 (" + player1 + ") Won!")
         break
+    check = 0
+    for a in game:
+        for b in a:
+            if b == "O" or b == "X":
+                check+=1
+    if check == 9:
+        print("Draw!")
+        break
 
     choice2 = input("It's player 1's turn. Enter your slot: ")
     print("Player 1 (X) - Player 2 (O)")
@@ -60,4 +68,12 @@ while playing:
         break
     if (game[0].count("O") == 3) or (game[1].count("O") == 3) or (game[2].count("O") == 3) or (game[0][0]=="O" and game[1][0]=="O" and game[2][0]=="O") or (game[0][1]=="O" and game[1][1]=="O" and game[2][1]=="O") or (game[0][0]=="O" and game[1][1]=="O" and game[2][2]=="O") or (game[0][2]=="O" and game[1][1]=="O" and game[2][0]=="O"):
         print("Player 2 (" + player2 + ") Won!")
+        break
+    check = 0
+    for a in game:
+        for b in a:
+            if b == "O" or b == "X":
+                check+=1
+    if check == 9:
+        print("Draw!")
         break
